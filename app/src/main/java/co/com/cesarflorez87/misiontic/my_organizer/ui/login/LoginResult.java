@@ -2,9 +2,7 @@ package  co.com.cesarflorez87.misiontic.my_organizer.ui.login;
 
 import android.support.annotation.Nullable;
 
-/**
- * Authentication result : success (user details) or error message.
- */
+
 class LoginResult {
     @Nullable
     private LoggedInUserView success;

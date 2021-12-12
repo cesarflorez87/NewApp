@@ -25,12 +25,16 @@ import co.com.cesarflorez87.misiontic.my_organizer.databinding.ActivityLoginBind
 
 public class LoginActivity extends AppCompatActivity {
 
+    Button tv_get_into;
+
     private LoginViewModel loginViewModel;
 private ActivityLoginBinding binding;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        tv_get_into=findViewById(R.id.login);
 
      binding = ActivityLoginBinding.inflate(getLayoutInflater());
      setContentView(binding.getRoot());
@@ -74,7 +78,7 @@ private ActivityLoginBinding binding;
                 }
                 setResult(Activity.RESULT_OK);
 
-                //Complete and destroy login activity once successful
+
                 finish();
             }
         });
@@ -82,7 +86,7 @@ private ActivityLoginBinding binding;
         TextWatcher afterTextChangedListener = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // ignore
+
             }
 
             @Override
